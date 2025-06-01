@@ -8,7 +8,7 @@ package prakpbo_krs;
  *
  * @author ACER
  */
-public class PrakPBO_KRS {
+public class Main {
 
     /**
      * @param args the command line arguments
