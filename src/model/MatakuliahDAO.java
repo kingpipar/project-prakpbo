@@ -22,26 +22,34 @@ public class MatakuliahDAO {
     
     public List<Matakuliah> getMatakuliahBySemester(int semester) {
     List<Matakuliah> list = new ArrayList<>();
-    try {
-        String query = "SELECT * FROM matakuliah WHERE semester = ?";
-        PreparedStatement ps = conn.prepareStatement(query);
+    String sql = "SELECT * FROM matakuliah WHERE semester = ?";
+
+    try (PreparedStatement ps = conn.prepareStatement(sql)) {
         ps.setInt(1, semester);
         ResultSet rs = ps.executeQuery();
-        
+
         while (rs.next()) {
             Matakuliah mk = new Matakuliah(
-                rs.getString("kode"),
-                rs.getString("nama"),
+                rs.getString("kode_mk"),
+                rs.getString("nama_mk"),
                 rs.getInt("sks"),
-                rs.getInt("semester")
+                rs.getInt("semester"),
+                rs.getString("kelas"),
+                rs.getString("hari"),
+                rs.getString("jam_mulai"),
+                rs.getString("jam_selesai"),
+                rs.getString("dosen_pengajar")
             );
             list.add(mk);
         }
+
     } catch (SQLException e) {
-        e.printStackTrace();
+        System.out.println("Gagal mengambil data matkul by semester: " + e.getMessage());
     }
+
     return list;
 }
+
     
 
     public List<Matakuliah> getDataMatkul() {
