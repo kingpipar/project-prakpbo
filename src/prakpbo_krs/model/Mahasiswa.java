@@ -24,6 +24,7 @@ public class Mahasiswa {
     }
     
     //setter dan getter
+    //getter
     public String getNim() {
         return nim;
     }
@@ -39,4 +40,26 @@ public class Mahasiswa {
     public String getPassword() {
         return password;
     }
+    
+    //setter
+    public void setNim() {
+        this.nim = nim;
+    }
+    
+    public void setNamaMhs() {
+        this.nama = nama;
+    }
+    
+    public void setSemester() {
+        this.semester = semester;
+    }
+    
+    public void setProdi() {
+        this.prodi = prodi;
+    }
+    
+    public void setPassword() {
+        this.password = password;
+    }
+    
 }
