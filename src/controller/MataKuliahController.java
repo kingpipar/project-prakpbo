@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package prakpbo_krs.controller;
+package controller;
 
-import prakpbo_krs.model.Matakuliah;
-import prakpbo_krs.model.MatakuliahDAO;
+import model.Matakuliah;
+import model.MatakuliahDAO;
 import java.util.List;
 
 /**

@@ -1,7 +1,7 @@
-package prakpbo_krs.controller;
+package controller;
 
-import prakpbo_krs.model.Mahasiswa;
-import prakpbo_krs.model.MahasiswaDAO;
+import model.Mahasiswa;
+import model.MahasiswaDAO;
 
 public class LoginController {
 

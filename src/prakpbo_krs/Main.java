@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package prakpbo_krs;
-import prakpbo_krs.view.LoginView;
+import view.LoginView;
 /**
  *
  * @author ACER
