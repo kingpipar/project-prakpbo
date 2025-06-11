@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package prakpbo_krs.model;
+package model;
 
 /**
  *
@@ -22,8 +22,7 @@ public class Mahasiswa {
         this.prodi = prodi;
         this.semester = semester;
     }
-    
-    //setter dan getter
+
     //getter
     public String getNim() {
         return nim;
@@ -41,25 +40,5 @@ public class Mahasiswa {
         return password;
     }
     
-    //setter
-    public void setNim() {
-        this.nim = nim;
-    }
-    
-    public void setNamaMhs() {
-        this.nama = nama;
-    }
-    
-    public void setSemester() {
-        this.semester = semester;
-    }
-    
-    public void setProdi() {
-        this.prodi = prodi;
-    }
-    
-    public void setPassword() {
-        this.password = password;
-    }
     
 }

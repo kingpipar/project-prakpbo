@@ -1,8 +1,8 @@
-/*
+    /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package prakpbo_krs.model;
+package model;
 
 import prakpbo_krs.Connector;
 import java.sql.*;
@@ -19,6 +19,30 @@ public class MatakuliahDAO {
         Connector connector = new Connector();
         this.conn = connector.koneksi;
     }
+    
+    public List<Matakuliah> getMatakuliahBySemester(int semester) {
+    List<Matakuliah> list = new ArrayList<>();
+    try {
+        String query = "SELECT * FROM matakuliah WHERE semester = ?";
+        PreparedStatement ps = conn.prepareStatement(query);
+        ps.setInt(1, semester);
+        ResultSet rs = ps.executeQuery();
+        
+        while (rs.next()) {
+            Matakuliah mk = new Matakuliah(
+                rs.getString("kode"),
+                rs.getString("nama"),
+                rs.getInt("sks"),
+                rs.getInt("semester")
+            );
+            list.add(mk);
+        }
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+    return list;
+}
+    
 
     public List<Matakuliah> getDataMatkul() {
         List<Matakuliah> list = new ArrayList<>();
@@ -48,4 +72,6 @@ public class MatakuliahDAO {
 
         return list;
     }
+    
+    
 }
