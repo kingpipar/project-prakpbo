@@ -1,4 +1,4 @@
-package model;
+package prakpbo_krs.model;
 
 import java.sql.*;
 import java.util.ArrayList;
