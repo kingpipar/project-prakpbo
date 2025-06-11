@@ -4,10 +4,32 @@
  */
 package controller;
 
-/**
- *
- * @author user
- */
-public class KRSController {
-    
+import model.Krs;
+import model.KrsDAO;
+import java.util.List;
+
+public class KrsController {
+    private KrsDAO dao;
+
+    public KrsController() {
+        dao = new KrsDAO();
+    }
+
+    public void tambahKrs(String nim, String kodeMk) {
+        Krs krs = new Krs(nim, kodeMk);
+        dao.tambahKrs(krs);
+    }
+
+    public List<Krs> getKrsMahasiswa(String nim) {
+        return dao.getDataKrs(nim);
+    }
+
+    public void hapusKrs(int idKrs) {
+        dao.hapusKrs(idKrs);
+    }
+
+    public void updateKrs(int idKrs, String kodeMkBaru) {
+        dao.updateKrs(idKrs, kodeMkBaru);
+    }
 }
+

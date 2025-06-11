@@ -40,6 +40,10 @@ public class Krs {
     }
     
     //setter
+    public void setIdKrs(int id_krs) {
+    this.id_krs = id_krs;
+    }
+    
     public void setNim(String nim){
         this.nim = nim;
     }
