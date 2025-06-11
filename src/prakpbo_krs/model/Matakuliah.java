@@ -9,44 +9,57 @@ package prakpbo_krs.model;
  * @author ACER
  */
 public class Matakuliah {
-    private String kodeMatkul;
-    private String namaMatkul;
+    private String kode_mk;
+    private String nama_mk;
     private int sks;
+    private int semester;
+    private String kelas;
     private String hari;
-    private String jamMulai;
-    private String jamSelesai;
-    private String dosenPengajar;
+    private String jam_mulai;
+    private String jam_selesai;
+    private String dosen_pengajar;
     
-    public Matakuliah(String kodeMatkul, String namaMatkul, int sks, String hari, String jamMulai, String jamSelesai, String dosenPengajar){
-        this.kodeMatkul = kodeMatkul;
-        this.namaMatkul = namaMatkul;
+    public Matakuliah(String kode_mk, String nama_mk, int sks,int semester, String kelas, String hari, String jam_mulai, String jam_selesai, String dosen_pengajar){
+        this.kode_mk = kode_mk;
+        this.nama_mk = nama_mk;
         this.sks = sks;
-        this.jamMulai = jamMulai;
-        this.jamSelesai = jamSelesai;
-        this.dosenPengajar = dosenPengajar;
+        this.semester = semester;
+        this.kelas = kelas;
+        this.hari = hari;
+        this.jam_mulai = jam_mulai;
+        this.jam_selesai = jam_selesai;
+        this.dosen_pengajar = dosen_pengajar;
     }
     
     //setter dan getter
+    
+    //getter
     public String getKodeMatkul() {
-        return kodeMatkul;
+        return kode_mk;
     }
     public String getNamaMatkul() {
-        return namaMatkul;
+        return nama_mk;
     }
     public int getSks() {
         return sks;
+    }
+    public int getSemester(){
+        return semester;
+    }
+    public String getKelas(){
+        return kelas;
     }
     public String getHari() {
         return hari;
     }
     public String getJamMulai() {
-        return jamMulai;
+        return jam_mulai;
     }
     public String getJamSelesai() {
-        return jamSelesai;
+        return jam_selesai;
     }
     public String getDosenPengajar() {
-        return dosenPengajar;
+        return dosen_pengajar;
     }
 }
 
