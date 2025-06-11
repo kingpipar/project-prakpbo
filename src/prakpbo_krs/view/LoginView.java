@@ -15,6 +15,8 @@ public class LoginView extends javax.swing.JFrame {
      */
     public LoginView() {
         initComponents();
+        setTitle("Login Form");
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -75,7 +77,6 @@ public class LoginView extends javax.swing.JFrame {
         jLabel4.setBackground(new java.awt.Color(102, 102, 102));
         jLabel4.setText("Password");
 
-        jPasswordField1.setText("jPasswordField1");
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordField1ActionPerformed(evt);
