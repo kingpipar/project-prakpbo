@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package prakpbo_krs;
-
+import prakpbo_krs.view.LoginView;
 /**
  *
  * @author ACER
@@ -14,7 +14,11 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new LoginView().setVisible(true);
+            }
+        });
     }
     
 }

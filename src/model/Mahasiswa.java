@@ -40,5 +40,8 @@ public class Mahasiswa {
         return password;
     }
     
+<<<<<<< HEAD:src/model/Mahasiswa.java
     
+=======
+>>>>>>> bdc7545c88a2178dda6b7dbf47cdc0596af46eaa:src/prakpbo_krs/model/Mahasiswa.java
 }
