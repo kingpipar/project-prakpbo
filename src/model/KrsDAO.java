@@ -46,7 +46,7 @@ public class KrsDAO {
         return daftarKrs;
     }
 
-    // ✅ Menghapus KRS berdasarkan id_krs
+    // Menghapus KRS berdasarkan id_krs
     public void hapusKrs(int idKrs) {
         String query = "DELETE FROM krs WHERE id_krs = ?";
         try (PreparedStatement stmt = conn.prepareStatement(query)) {
@@ -58,7 +58,7 @@ public class KrsDAO {
         }
     }
 
-    // ✅ Mengupdate id_jadwal untuk KRS tertentu
+    //  Mengupdate id_jadwal untuk KRS tertentu
     public void updateKrs(int idKrs, int idJadwalBaru) {
         String query = "UPDATE krs SET id_jadwal = ? WHERE id_krs = ?";
         try (PreparedStatement stmt = conn.prepareStatement(query)) {

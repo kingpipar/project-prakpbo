@@ -47,10 +47,12 @@ public class JadwalKuliahDAO {
 
     public int getTotalSKSTempuh(String nim) {
         int totalSKS = 0;
-        String sql = "SELECT SUM(mk.sks) AS total_sks "
-                + "FROM krs k "
-                + "JOIN matakuliah mk ON k.kode_mk = mk.kode_mk "
-                + "WHERE k.nim = ?";
+        String sql = """
+                     SELECT SUM(mk.sks) AS total_sks
+                     FROM krs k
+                     JOIN jadwal_kuliah jk ON k.id_jadwal = jk.id_jadwal
+                     JOIN matakuliah mk ON jk.kode_mk = mk.kode_mk
+                     WHERE k.nim = ?""";
 
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, nim);
