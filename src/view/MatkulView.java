@@ -4,8 +4,11 @@
  */
 package view;
 
+import java.util.List;
 import javax.swing.JButton;
+import javax.swing.table.DefaultTableModel;
 import model.Mahasiswa;
+import model.Matakuliah;
 
 /**
  *
@@ -334,6 +337,22 @@ public void setMahasiswa(Mahasiswa mahasiswa) {
     public JButton getBtnLogout() {
         return jButton4;
     }
+    public void setTableData(List<Matakuliah> daftarMatkul) {
+    DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+    model.setRowCount(0); // hapus semua baris sebelumnya
+
+    for (Matakuliah mk : daftarMatkul) {
+        Object[] row = new Object[]{
+            mk.getKodeMatkul(),
+            mk.getNamaMatkul(),
+            mk.getSemester(),
+            mk.getSks(),
+            mk.getJadwal(),
+            mk.getDosen()
+        };
+        model.addRow(row);
+    }
+}
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {

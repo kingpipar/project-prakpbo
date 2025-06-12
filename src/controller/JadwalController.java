@@ -49,7 +49,9 @@ public class JadwalController {
         jadwal.getBtnLogout().addActionListener(e -> {
             int konfirmasi = JOptionPane.showConfirmDialog(jadwal, "Yakin ingin logout?", "Logout", JOptionPane.YES_NO_OPTION);
             if (konfirmasi == JOptionPane.YES_OPTION) {
-                new LoginView().setVisible(true);
+                LoginView view = new LoginView();
+                new LoginController(view); 
+                view.setVisible(true);
                 jadwal.dispose();
             }
         });
