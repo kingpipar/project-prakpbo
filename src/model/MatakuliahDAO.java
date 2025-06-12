@@ -1,4 +1,4 @@
-    /*
+/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -33,12 +33,7 @@ public class MatakuliahDAO {
                 rs.getString("kode_mk"),
                 rs.getString("nama_mk"),
                 rs.getInt("sks"),
-                rs.getInt("semester"),
-                rs.getString("kelas"),
-                rs.getString("hari"),
-                rs.getString("jam_mulai"),
-                rs.getString("jam_selesai"),
-                rs.getString("dosen_pengajar")
+                rs.getInt("semester")
             );
             list.add(mk);
         }
@@ -64,12 +59,7 @@ public class MatakuliahDAO {
                     rs.getString("kode_mk"),
                     rs.getString("nama_mk"),
                     rs.getInt("sks"),
-                    rs.getInt("semester"),
-                    rs.getString("kelas"),
-                    rs.getString("hari"),
-                    rs.getString("jam_mulai"),
-                    rs.getString("jam_selesai"),
-                    rs.getString("dosen_pengajar")
+                    rs.getInt("semester")
                 );
                 list.add(mk);
             }
