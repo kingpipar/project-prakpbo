@@ -150,11 +150,11 @@ public class JadwalView extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setText("ISYRAF FAJAR ARUNDAYA");
+        jLabel1.setText("(nama mhs)");
 
-        jLabel2.setText("123230140");
+        jLabel2.setText("(nim mhs)");
 
-        jLabel4.setText("TEKNIK INFORMATIKA");
+        jLabel4.setText("(prodi)");
 
         jLabel6.setText("Nama :");
 
@@ -164,7 +164,7 @@ public class JadwalView extends javax.swing.JFrame {
 
         jLabel9.setText("Semester :");
 
-        jLabel10.setText("4");
+        jLabel10.setText("(semester)");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -179,10 +179,10 @@ public class JadwalView extends javax.swing.JFrame {
                     .addComponent(jLabel9))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10))
                 .addGap(142, 142, 142))
         );
         jPanel3Layout.setVerticalGroup(

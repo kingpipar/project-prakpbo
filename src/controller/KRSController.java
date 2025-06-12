@@ -8,10 +8,10 @@ import model.Krs;
 import model.KrsDAO;
 import java.util.List;
 
-public class KrsController {
+public class KRSController {
     private KrsDAO dao;
 
-    public KrsController() {
+    public KRSController() {
         dao = new KrsDAO();
     }
 

@@ -222,10 +222,10 @@
                       </Group>
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel10" min="-2" pref="43" max="-2" attributes="0"/>
                           <Component id="jLabel1" min="-2" pref="257" max="-2" attributes="0"/>
                           <Component id="jLabel4" alignment="0" min="-2" pref="257" max="-2" attributes="0"/>
                           <Component id="jLabel2" alignment="0" min="-2" pref="257" max="-2" attributes="0"/>
+                          <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="142" max="-2" attributes="0"/>
                   </Group>
@@ -262,17 +262,17 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="ISYRAF FAJAR ARUNDAYA"/>
+                <Property name="text" type="java.lang.String" value="(nama mhs)"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="123230140"/>
+                <Property name="text" type="java.lang.String" value="(nim mhs)"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="TEKNIK INFORMATIKA"/>
+                <Property name="text" type="java.lang.String" value="(prodi)"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel6">
@@ -297,7 +297,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel10">
               <Properties>
-                <Property name="text" type="java.lang.String" value="4"/>
+                <Property name="text" type="java.lang.String" value="(semester)"/>
               </Properties>
             </Component>
           </SubComponents>
