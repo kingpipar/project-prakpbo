@@ -35,7 +35,7 @@ public class DashboardController {
         });
 
         dashboardView.getBtnJadwal().addActionListener(e -> {
-            new JadwalView().setVisible(true);
+            new JadwalController(mahasiswa);
             dashboardView.dispose();
         });
 
