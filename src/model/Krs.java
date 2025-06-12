@@ -11,44 +11,37 @@ package model;
 public class Krs {
     private int id_krs;
     private String nim;
-    private String kode_mk;
-    
-    public Krs(int id_krs, String nim, String kode_mk){
+    private int id_jadwal;
+
+    public Krs(int id_krs, String nim, int id_jadwal) {
         this.id_krs = id_krs;
         this.nim = nim;
-        this.kode_mk = kode_mk;
+        this.id_jadwal = id_jadwal;
     }
-    //overloading
-    public Krs(String nim, String kode_mk){
+
+    public Krs(String nim, int id_jadwal) {
         this.nim = nim;
-        this.kode_mk = kode_mk;
+        this.id_jadwal = id_jadwal;
     }
-    
-    //getter dan setter
-    
-    //getter
-    public int getIdKrs(){
+
+    public int getIdKrs() {
         return id_krs;
     }
-    
-    public String getNim(){
+
+    public String getNim() {
         return nim;
     }
-    
-    public String getKodeMk(){
-        return kode_mk;
+
+    public int getIdJadwal() {
+        return id_jadwal;
     }
-    
-    //setter
-    public void setIdKrs(int id_krs) {
-    this.id_krs = id_krs;
-    }
-    
-    public void setNim(String nim){
+
+    public void setNim(String nim) {
         this.nim = nim;
     }
-    
-    public void setKodeMk(String kode_mk){
-        this.kode_mk = kode_mk;
+
+    public void setIdJadwal(int id_jadwal) {
+        this.id_jadwal = id_jadwal;
     }
 }
+

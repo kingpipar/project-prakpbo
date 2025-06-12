@@ -16,7 +16,7 @@ public class MatakuliahController {
         dao = new MatakuliahDAO();
     }
 
-    // Ambil semua matkul dari semester tertentu (yang sedang ditempuh mahasiswa)
+    // Ambil matkulyang sedang ditempuh mahasiswa
     public List<Matakuliah> getMatakuliahBySemester(int semester) {
         return dao.getMatakuliahBySemester(semester);
     }
