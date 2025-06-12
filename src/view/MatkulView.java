@@ -347,8 +347,8 @@ public void setMahasiswa(Mahasiswa mahasiswa) {
             mk.getNamaMatkul(),
             mk.getSemester(),
             mk.getSks(),
-            mk.getJadwal(),
-            mk.getDosen()
+            mk.getJamMulai(),
+            mk.getJamSelesai()
         };
         model.addRow(row);
     }

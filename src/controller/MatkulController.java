@@ -4,7 +4,6 @@
  */
 package controller;
 
-import java.util.List;
 import model.Mahasiswa;
 import view.*;
 /**
@@ -12,7 +11,6 @@ import view.*;
  * @author ACER
  */
 import javax.swing.JOptionPane;
-import model.Matakuliah;
 
 public class MatkulController {
     private MatkulView matkul;
@@ -58,28 +56,6 @@ public class MatkulController {
             }
         });
     }
-    private void loadTable() {
-    List<Matakuliah> list = MatakuliahDAO.getDataMatkul();
-
-    DefaultTableModel model = new DefaultTableModel(new String[] {
-        "Kode", "Nama", "SKS", "Semester", "Kelas", "Hari", "Jam Mulai", "Jam Selesai", "Dosen"
-    }, 0);
-
-    for (Matakuliah mk : list) {
-        model.addRow(new Object[] {
-            mk.getKodeMatkul(),
-            mk.getNamaMatkul(),
-            mk.getSks(),
-            mk.getSemester(),
-            mk.getKelas(),
-            mk.getHari(),
-            mk.getJamMulai(),
-            mk.getJamSelesai(),
-            mk.getDosenPengajar()
-        });
-    }
-
-    matkul.getTabelMatkul().setModel(model);
-}
-
+    
+    
 }
