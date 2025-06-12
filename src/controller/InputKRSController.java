@@ -18,7 +18,7 @@ public class InputKRSController {
 
     public InputKRSController(Mahasiswa mahasiswa) {
         this.mahasiswa = mahasiswa;
-        InputKRSView = new InputKRSView();
+        this.InputKRSView = new InputKRSView();
         InputKRSView.setMahasiswa(mahasiswa); // tampilkan nama/nim, jika perlu
         initController();
         InputKRSView.setVisible(true);
@@ -36,12 +36,12 @@ public class InputKRSController {
         });
 
         InputKRSView.getBtnJadwal().addActionListener(e -> {
-            new JadwalView().setVisible(true); // bisa pakai controller nanti
+            new JadwalController(mahasiswa);
             InputKRSView.dispose();
         });
 
         InputKRSView.getBtnMataKuliah().addActionListener(e -> {
-            new MatkulView().setVisible(true); // bisa pakai controller nanti
+            new MatkulController(mahasiswa);
             InputKRSView.dispose();
         });
 

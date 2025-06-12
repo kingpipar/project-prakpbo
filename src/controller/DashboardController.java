@@ -18,7 +18,7 @@ public class DashboardController {
 
     public DashboardController(Mahasiswa mahasiswa) {
         this.mahasiswa = mahasiswa;
-        dashboardView = new DashboardView();
+        this.dashboardView = new DashboardView();
         dashboardView.setMahasiswa(mahasiswa); // isi label dari model
         initController();
         dashboardView.setVisible(true);
@@ -30,7 +30,7 @@ public class DashboardController {
         });
 
         dashboardView.getBtnInputKRS().addActionListener(e -> {
-            new InputKRSView().setVisible(true);
+            new InputKRSController(mahasiswa);
             dashboardView.dispose();
         });
 
@@ -40,7 +40,7 @@ public class DashboardController {
         });
 
         dashboardView.getBtnMataKuliah().addActionListener(e -> {
-            new MatkulView().setVisible(true);
+            new MatkulController(mahasiswa);
             dashboardView.dispose();
         });
 
