@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 12, 2025 at 08:19 AM
+-- Generation Time: Jun 12, 2025 at 11:19 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -138,6 +138,16 @@ CREATE TABLE `krs` (
   `nim` varchar(9) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `krs`
+--
+
+INSERT INTO `krs` (`id_krs`, `id_jadwal`, `nim`) VALUES
+(2, 100210153, '123230109'),
+(3, 123210252, '123230109'),
+(4, 123210263, '123230109'),
+(5, 123210273, '123230109');
+
 -- --------------------------------------------------------
 
 --
@@ -256,9 +266,7 @@ ALTER TABLE `jadwal_kuliah`
 -- Indexes for table `krs`
 --
 ALTER TABLE `krs`
-  ADD PRIMARY KEY (`id_krs`),
-  ADD UNIQUE KEY `id_jadwal` (`id_jadwal`),
-  ADD UNIQUE KEY `nim` (`nim`) USING BTREE;
+  ADD PRIMARY KEY (`id_krs`);
 
 --
 -- Indexes for table `mahasiswa`
@@ -286,18 +294,7 @@ ALTER TABLE `jadwal_kuliah`
 -- AUTO_INCREMENT for table `krs`
 --
 ALTER TABLE `krs`
-  MODIFY `id_krs` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `krs`
---
-ALTER TABLE `krs`
-  ADD CONSTRAINT `id_jadwal` FOREIGN KEY (`id_jadwal`) REFERENCES `jadwal_kuliah` (`id_jadwal`) ON DELETE CASCADE,
-  ADD CONSTRAINT `nim` FOREIGN KEY (`nim`) REFERENCES `mahasiswa` (`nim`) ON DELETE CASCADE;
+  MODIFY `id_krs` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
