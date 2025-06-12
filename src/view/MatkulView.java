@@ -7,6 +7,7 @@ package view;
 import java.util.List;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
 import model.JadwalKuliah;
 import model.Mahasiswa;
@@ -21,7 +22,10 @@ public class MatkulView extends javax.swing.JFrame {
      * Creates new form Dashboard
      */
     public MatkulView() {
+        setTitle("Daftar Matkul  -Sistem KRS");
         initComponents();
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
     // Di dalam DashboardView.java

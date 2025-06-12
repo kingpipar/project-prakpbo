@@ -5,6 +5,7 @@
 package view;
 
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import model.Mahasiswa;
 
 /**
@@ -16,7 +17,10 @@ public class JadwalView extends javax.swing.JFrame {
      * Creates new form Dashboard
      */
     public JadwalView() {
+        setTitle("Jadwal  -Sistem KRS");
         initComponents();
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
     // Di dalam DashboardView.java
