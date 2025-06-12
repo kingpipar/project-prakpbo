@@ -15,8 +15,8 @@ public class KRSController {
         dao = new KrsDAO();
     }
 
-    public void tambahKrs(String nim, String kodeMk) {
-        Krs krs = new Krs(nim, kodeMk);
+    public void tambahKrs(String nim, int idJadwal) {
+        Krs krs = new Krs(nim, idJadwal);
         dao.tambahKrs(krs);
     }
 
@@ -28,8 +28,8 @@ public class KRSController {
         dao.hapusKrs(idKrs);
     }
 
-    public void updateKrs(int idKrs, String kodeMkBaru) {
-        dao.updateKrs(idKrs, kodeMkBaru);
+    public void updateKrs(int idKrs, int idJadwalBaru) {
+        dao.updateKrs(idKrs, idJadwalBaru);
     }
 }
 
