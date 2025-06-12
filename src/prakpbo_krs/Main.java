@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package prakpbo_krs;
+import controller.LoginController;
 import view.LoginView;
 /**
  *
@@ -16,7 +17,9 @@ public class Main {
     public static void main(String[] args) {
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                new LoginView().setVisible(true);
+                LoginView view = new LoginView();
+                new LoginController(view); 
+                view.setVisible(true);
             }
         });
     }

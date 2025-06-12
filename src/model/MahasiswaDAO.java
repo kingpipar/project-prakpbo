@@ -68,23 +68,27 @@ public class MahasiswaDAO {
         }
         return list;
     }
+    
+    public Mahasiswa getMahasiswabyNim(String nim){
+         Mahasiswa mhs = null;
+    try {
+        String query = "SELECT * FROM mahasiswa WHERE nim = ?";
+        PreparedStatement ps = conn.prepareStatement(query);
+        ps.setString(1, nim);
+        ResultSet rs = ps.executeQuery();
 
-    // (Opsional) Tambah Mahasiswa - untuk admin/registrasi
-    public boolean insertMahasiswa(Mahasiswa mhs) {
-        try {
-            String query = "INSERT INTO mahasiswa (nim, nama, password, prodi, semester) VALUES (?, ?, ?, ?, ?)";
-            PreparedStatement ps = conn.prepareStatement(query);
-            ps.setString(1, mhs.getNim());
-            ps.setString(2, mhs.getNamaMhs());
-            ps.setString(3, mhs.getPassword());
-            ps.setString(4, mhs.getProdi());
-            ps.setInt(5, mhs.getSemester());
-
-            int rows = ps.executeUpdate();
-            return rows > 0;
-        } catch (SQLException e) {
-            System.out.println("Gagal menambah mahasiswa: " + e.getMessage());
-            return false;
+        if (rs.next()) {
+            mhs = new Mahasiswa(
+                rs.getString("nim"),
+                rs.getString("nama"),
+                rs.getString("password"),
+                rs.getString("prodi"),
+                rs.getInt("semester")
+            );
         }
+    } catch (SQLException e) {
+        System.out.println("Gagal mengambil data mahasiswa by NIM: " + e.getMessage());
+    }
+    return mhs;
     }
 }
