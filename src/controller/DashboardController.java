@@ -9,6 +9,7 @@ package controller;
  * @author ACER
  */
 import javax.swing.JOptionPane;
+import model.JadwalKuliahDAO;
 import model.Mahasiswa;
 import view.*;
 
@@ -21,6 +22,7 @@ public class DashboardController {
         this.dashboardView = new DashboardView();
         dashboardView.setMahasiswa(mahasiswa); // isi label dari model
         initController();
+        loadSKSTempuh();
         dashboardView.setVisible(true);
     }
     
@@ -55,5 +57,16 @@ public class DashboardController {
         });
     }
     
+    private void loadSKSTempuh() {
+        JadwalKuliahDAO dao = new JadwalKuliahDAO(); 
+        int totalSKS = dao.getTotalSKSTempuh(mahasiswa.getNim());
+        dashboardView.setLblTotalSKS("Total SKS: " + totalSKS); // Panggil metode dari DashboardView
+        if (totalSKS >= 24) {
+            dashboardView.setLblStatusKRS("KRS sudah diisi");
+        } else {
+            dashboardView.setLblStatusKRS("Anda belum melengkapi KRS");
+        }
+    }
+
     
 }

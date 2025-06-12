@@ -5,6 +5,7 @@
 package view;
 
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import model.Mahasiswa;
 
 /**
@@ -223,7 +224,7 @@ public void setMahasiswa(Mahasiswa mahasiswa) {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel13.setText("Anda belum melengkapi KRS");
+        jLabel13.setText("(Validasi pengisian KRS)");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -247,7 +248,7 @@ public void setMahasiswa(Mahasiswa mahasiswa) {
 
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel14.setText("SKS Ditempuh : 100 ");
+        jLabel14.setText("SKS Ditempuh : (totalSKS)");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -358,6 +359,18 @@ public void setMahasiswa(Mahasiswa mahasiswa) {
                 new DashboardView().setVisible(true);
             }
         });
+    }
+    
+    public JLabel getLblTotalSKS() {
+        return jLabel14;
+    }
+
+    public void setLblTotalSKS(String teks) {
+        jLabel14.setText(teks);
+    }
+    
+    public void setLblStatusKRS(String teks) {
+        jLabel13.setText(teks);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

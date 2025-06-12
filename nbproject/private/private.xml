@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/model/Matakuliah.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/model/JadwalKuliah.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/controller/KRSController.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/controller/JadwalKuliahController.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/controller/DashboardController.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/model/JadwalKuliahDAO.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/view/MatkulView.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/model/KrsDAO.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/prakpbo_krs/Main.java</file>
@@ -16,10 +18,11 @@
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/view/DashboardView.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/view/InputKRSView.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/view/JadwalView.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/controller/MatkulController.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/prakpbo_krs/Connector.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/model/MahasiswaDAO.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/controller/JadwalController.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/model/Mahasiswa.java</file>
-            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/controller/MatakuliahController.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/PrakPBO_KRS/src/controller/InputKRSController.java</file>
         </group>
     </open-files>

@@ -338,7 +338,7 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jLabel13">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Anda belum melengkapi KRS"/>
+                <Property name="text" type="java.lang.String" value="(Validasi pengisian KRS)"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -381,7 +381,7 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jLabel14">
               <Properties>
-                <Property name="text" type="java.lang.String" value="SKS Ditempuh : 100 "/>
+                <Property name="text" type="java.lang.String" value="SKS Ditempuh : (totalSKS)"/>
               </Properties>
             </Component>
           </SubComponents>
